@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    float cost_p , selling_p , profit , loss;
+    printf("Enter cost price :");
+    scanf("%f\n%f",&cost_p , &selling_p);
+    printf("Enter selling price :");
+    scanf("%f\n%f",&cost_p , &selling_p);
+    
+    if(selling_p > cost_p)
+    {
+        profit = selling_p - cost_p;
+        printf("We Get Profit: %f ", profit);
+    }
+    else if(selling_p < cost_p)
+    {
+        loss = cost_p - selling_p; 
+        printf("We get Loss: %f",loss);
+    }
+    else
+    {
+        printf("Ideal");
+    }
+    return 0;
+}
